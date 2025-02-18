@@ -1,4 +1,6 @@
 import static org.junit.jupiter.api.Assertions.*;
+
+import org.com.myproject.BlogPost;
 import org.junit.jupiter.api.Test;
 
 public class BlogPostTest {

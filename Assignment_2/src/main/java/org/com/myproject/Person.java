@@ -1,16 +1,16 @@
 package org.com.myproject;
 
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
+import lombok.extern.jackson.Jacksonized;
 
 @Builder
 @Getter
 @EqualsAndHashCode
 @ToString
-@JsonDeserialize(builder = Person.PersonBuilder.class)
+@Jacksonized
 public class Person {
     private String id;
     private String firstName;
